@@ -26,3 +26,9 @@ class AbstractMemoryPlugin:
         Unsubscribe chat id for specific restaurant
         """
         raise NotImplementedError
+
+    async def save(self) -> None:
+        """
+        Save data to a file for persistent
+        """
+        raise NotImplementedError
